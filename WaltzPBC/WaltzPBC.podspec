@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WaltzPBC"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "WaltzPBC"
 
   # This description is used to generate tags and improve search results.
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
 
   s.vendored_frameworks = "WaltzPBC.framework"
   # s.resources = 'WREFramework.bundle'
-  s.source_files  = "WaltzPBC/*"
+  s.source_files  = "WaltzPBC/*.*"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
