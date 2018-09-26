@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WaltzAccess"
-  s.version      = "0.3.0"
+  s.version      = "0.3.1"
   s.summary      = "WaltzAccess"
 
   # This description is used to generate tags and improve search results.
@@ -89,9 +89,9 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.vendored_frameworks = "WaltzAccess.framework"
+  s.vendored_frameworks = "WaltzAccess/WaltzAccess.framework"
   # s.resources = 'WREFramework.bundle'
-  s.source_files  = "WaltzAccess/*"
+  # s.source_files  = "WaltzAccess/*"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
