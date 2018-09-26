@@ -163,8 +163,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # define SWIFT_DEPRECATED_OBJC(Msg) SWIFT_DEPRECATED_MSG(Msg)
 #endif
 #if __has_feature(modules)
-@import Foundation;
-@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -186,58 +184,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
-SWIFT_CLASS("_TtC11WaltzAccess12Connectivity")
-@interface Connectivity : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class NSBundle;
-
-SWIFT_CLASS("_TtC11WaltzAccess7Langage")
-@interface Langage : NSObject
-+ (NSString * _Nonnull)Localized:(NSString * _Nonnull)key bundle:(NSBundle * _Nullable)bundle SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-typedef SWIFT_ENUM(uint8_t, QR2ErrorCodesLegend, closed) {
-  QR2ErrorCodesLegendKErrorCode0NoError = 0,
-  QR2ErrorCodesLegendKErrorCode1TryAgainLater = 1,
-  QR2ErrorCodesLegendKErrorCode2AccessDeniedNotOnWhiteList = 2,
-  QR2ErrorCodesLegendKErrorCode3AuthenticationErrorIncorrectSignature = 3,
-  QR2ErrorCodesLegendKErrorCode4IncorrectShortTimeStamp = 4,
-  QR2ErrorCodesLegendKErrorCode5RequestID = 5,
-  QR2ErrorCodesLegendKErrorCode6WACNotConnected = 6,
-};
 
 
 
 
-
-
-
-@class UIImagePickerController;
-@class NSCoder;
-
-SWIFT_CLASS("_TtC11WaltzAccess25WaltzQRPageViewController")
-@interface WaltzQRPageViewController : UIViewController <ZBarReaderDelegate>
-- (void)viewDidLoad;
-- (void)viewWillAppear:(BOOL)animated;
-- (void)viewWillDisappear:(BOOL)animated;
-- (void)applicationDidBecomeActive:(NSNotification * _Nonnull)notification;
-- (void)restoreBrightness;
-- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC11WaltzAccess18WaltzRequestHelper")
-@interface WaltzRequestHelper : NSObject
-- (BOOL)isCustomEnv SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)isProdEnv SWIFT_WARN_UNUSED_RESULT;
-- (void)setBackendEnvToUseWithBackend:(NSString * _Nonnull)backend index:(NSInteger)index;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
 
 
 
