@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WaltzAccess"
-  s.version      = "0.3.6"
+  s.version      = "0.3.7"
   s.summary      = "WaltzAccess"
 
   # This description is used to generate tags and improve search results.
