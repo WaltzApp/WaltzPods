@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WaltzAccess"
-  s.version      = "0.4.0"
+  s.version      = "0.4.1"
   s.summary      = "WaltzAccess"
   s.swift_version = '4.2'
 
@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
 
   s.vendored_frameworks = "WaltzAccess/WaltzAccess.framework"
   # s.resources = 'WREFramework.bundle'
-  s.source_files  = "WaltzAccess/*.swift"
+  s.source_files  = "WaltzAccess/*.h"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
