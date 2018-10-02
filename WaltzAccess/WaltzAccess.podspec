@@ -16,8 +16,9 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WaltzAccess"
-  s.version      = "0.3.8"
+  s.version      = "0.3.9"
   s.summary      = "WaltzAccess"
+  s.swift_version = '4.2'
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -91,7 +92,7 @@ Pod::Spec.new do |s|
 
   s.vendored_frameworks = "WaltzAccess/WaltzAccess.framework"
   # s.resources = 'WREFramework.bundle'
-  s.source_files  = "*.swift"
+  s.source_files  = "WaltzAccess/*.swift"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
