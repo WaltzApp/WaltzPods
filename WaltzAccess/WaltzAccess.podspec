@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WaltzAccess"
-  s.version      = "0.4.2"
+  s.version      = "0.4.3"
   s.summary      = "WaltzAccess"
   s.swift_version = '4.2'
 
@@ -79,8 +79,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/WaltzApp/WaltzPods.git", :tag => s.name+'-v'+String(s.version) }
-
+  s.source       = { :git => "https://github.com/WaltzApp/WaltzPods.git", :tag => s.name+'-v'+String(s.version)+'-QA' }
+  # s.source       = { :git => "https://github.com/WaltzApp/WaltzPods.git", :tag => s.name+'-v'+String(s.version) }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
