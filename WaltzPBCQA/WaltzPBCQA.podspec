@@ -15,16 +15,16 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "WaltzPBC"
-  s.version      = "0.0.5"
-  s.summary      = "WaltzPBC"
+  s.name         = "WaltzPBCQA"
+  s.version      = "0.0.1"
+  s.summary      = "WaltzPBCQA"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "WaltzPBC"
+  s.description  = "WaltzPBCQA"
 
   s.homepage     = "http://waltzapp.com/"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -80,6 +80,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/WaltzApp/WaltzPods.git", :tag => s.name+'-v'+String(s.version) }
 
+
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
@@ -88,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.vendored_frameworks = "WaltzPBC/WaltzPBC.framework"
+  s.vendored_frameworks = "WaltzPBCQA/WaltzPBCQA.framework"
   # s.resources = 'WREFramework.bundle'
   # s.source_files  = "WaltzPBC/*.*"
   # s.exclude_files = "Classes/Exclude"

@@ -1,0 +1,11 @@
+framework module WaltzPBCQA {
+  umbrella header "WaltzPBCQA.h"
+
+  export *
+  module * { export * }
+}
+
+module WaltzPBCQA.Swift {
+    header "WaltzPBCQA-Swift.h"
+    requires objc
+}

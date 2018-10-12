@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint WaltzPBC.podspec' to ensure this is a
+#  Be sure to run `pod spec lint WaltzAccess.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,16 +15,17 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "WaltzPBC"
-  s.version      = "0.0.5"
-  s.summary      = "WaltzPBC"
+  s.name         = "WaltzAccess"
+  s.version      = "0.4.3"
+  s.summary      = "WaltzAccess"
+  s.swift_version = '4.2'
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "WaltzPBC"
+  s.description  = "WaltzAccess SDK to open door"
 
   s.homepage     = "http://waltzapp.com/"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -78,7 +79,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/WaltzApp/WaltzPods.git", :tag => s.name+'-v'+String(s.version) }
+  s.source       = { :git => "https://github.com/WaltzApp/WaltzPods.git", :tag => s.name+'-v'+String(s.version)+'-QA' }
+  # s.source       = { :git => "https://github.com/WaltzApp/WaltzPods.git", :tag => s.name+'-v'+String(s.version) }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -88,9 +90,9 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.vendored_frameworks = "WaltzPBC/WaltzPBC.framework"
+  s.vendored_frameworks = "WaltzAccess/WaltzAccess.framework"
   # s.resources = 'WREFramework.bundle'
-  # s.source_files  = "WaltzPBC/*.*"
+  # s.source_files  = "WaltzAccess/*.h"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -117,7 +119,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "Alamofire", "Freddy", "JWTDecode", "UICKeyChainStore"
+  s.frameworks = "Alamofire", "Freddy", "JWTDecode", "UICKeyChainStore", "WaltzPBC"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
@@ -139,9 +141,10 @@ Pod::Spec.new do |s|
  # }
   #s.xcconfig = { 'ARCHS' => 'armv7 armv7s arm64', 'VALID_ARCHS' => 'armv7 armv7s arm64' }
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "Alamofire"
-  # s.dependency "Freddy"
-  # s.dependency "JWTDecode"
-  # s.dependency "UICKeyChainStore"
+  s.dependency "Alamofire"
+  s.dependency "Freddy"
+  s.dependency "JWTDecode"
+  s.dependency "UICKeyChainStore"
+  s.dependency "WaltzPBC"
 
 end
