@@ -1,0 +1,11 @@
+framework module WaltzAccessQA {
+  umbrella header "WaltzAccessQA.h"
+
+  export *
+  module * { export * }
+}
+
+module WaltzAccessQA.Swift {
+    header "WaltzAccessQA-Swift.h"
+    requires objc
+}
