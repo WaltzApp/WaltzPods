@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WaltzAccess"
-  s.version      = "2.0.2"
+  s.version      = "2.0.3"
   s.summary      = "WaltzAccess"
   s.swift_version = '4.2'
 
