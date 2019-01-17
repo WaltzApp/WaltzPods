@@ -209,6 +209,13 @@ SWIFT_CLASS("_TtC13WaltzAccessQA6Person")
 @end
 
 
+SWIFT_CLASS("_TtC13WaltzAccessQA21TransactionResultData")
+@interface TransactionResultData : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
 
 
 
