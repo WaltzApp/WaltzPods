@@ -16,8 +16,9 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WaltzPBC"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "WaltzPBC"
+  s.swift_version = '5.0'
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -63,7 +64,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "9.3"
+  s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
