@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WaltzAccessQA"
-  s.version      = "2.8.2"
+  s.version      = "2.8.3"
   s.summary      = "WaltzAccessQA"
   s.swift_version = '5.0'
 
@@ -118,7 +118,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  s.frameworks = "Alamofire", "Freddy", "JWTDecode", "UICKeyChainStore", "WaltzPBCQA"
+  s.frameworks = "Alamofire", "JWTDecode", "SwiftyJSON", "UICKeyChainStore", "WaltzPBCQA"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
@@ -141,8 +141,8 @@ Pod::Spec.new do |s|
   #s.xcconfig = { 'ARCHS' => 'armv7 armv7s arm64', 'VALID_ARCHS' => 'armv7 armv7s arm64' }
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency "Alamofire"
-  s.dependency "Freddy"
   s.dependency "JWTDecode"
+  s.dependency "SwiftyJSON"
   s.dependency "UICKeyChainStore"
   s.dependency "WaltzPBCQA"
 
